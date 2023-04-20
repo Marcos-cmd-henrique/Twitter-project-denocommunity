@@ -4,99 +4,323 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/twitter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Twitter</title>
+    <link rel="stylesheet" href="../css/twitter.css" />
+    <title>Home/Twitter</title>
 </head>
 <body>
-
     <div class="layout">
-        <div class="layout__left-sidebar">
-            <img src="/img/twitter-logo.png" width="30" height="30" alt="twitter">
+      <div class="layout__left-sidebar">
+        <img src="../svg/twitter.svg" class="brand" />
+        <div class="sidebar-menu">
+          <div class="sidebar-menu__item sidebar-menu__item--active">
+            <img src="../svg/home.svg" class="sidebar-menu__item-icon" />
+            Home
+          </div>
+          <div class="sidebar-menu__item">
+            <img src="../svg/explore.svg" class="sidebar-menu__item-icon" />
+            Explore
+          </div>
 
-            <div class="icons-group">
+          <div class="sidebar-menu__item">
+            <img
+              src="../svg/notifications.svg"
+              class="sidebar-menu__item-icon"
+            />
+            Notifications
+          </div>
 
-                <div class="item">
-                    <p><i class="space fa fa-home" aria-hidden="false"></i>Home</p>
-                    <p><i class="fa fa-hashtag" aria-hidden="true"></i>Explore</p>
-                    <p><i class="fa fa-bell" aria-hidden="true"></i></i>Notifications</h1>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i>Messages</p>
-                    <p><i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmarks</p>
-                    <p><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter Blue</p>
-                    <p><i class="fa fa-user" aria-hidden="true"></i>Profile</p>
-                    <p><i class="fa fa-ellipsis-h"></i>More</p>
-                </div>
-                <button class="button-tweet">Tweet</button> 
+          <div class="sidebar-menu__item">
+            <img src="../svg/messages.svg" class="sidebar-menu__item-icon" />
+            Messages
+          </div>
 
-                
+          <div class="sidebar-menu__item">
+            <img src="../img/768px-Linearicons_bookmark.svg.png" class="sidebar-menu__item-icon" />
+            Bookmarks
+          </div>
 
+          <div class="sidebar-menu__item">
+            <img src="../svg/messages.svg" class="sidebar-menu__item-icon" />
+            Twitter Blue
+          </div>
 
-               
+          <div class="sidebar-menu__item">
+            <img src="../svg/profile.svg" class="sidebar-menu__item-icon" />
+            Profile
+          </div>
+
+          <div class="sidebar-menu__item">
+            <img src="../svg/more.svg" class="sidebar-menu__item-icon" />
+            More
+          </div>
+
+          <button class="button-tweet">Tweet</button> 
+
+          <div class="profile">
+            <img class="imagem_profile" src="../img/profile.jpg" alt="Perfil-Usuario">
+            <p>Marcos Henrique</p>
+            <p>@MHenrique58502</p>
+            <img class="perfil_icon" src="../img/more.png" alt="More">
+        </div>
+        </div>
+      </div>
+
+      <div class="layout__main">
+        <div class="tweet">
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Home
+              </div>
+              
             </div>
-
-            <div class="profile">
-                <img class="imagem_profile" src="/img/profile.jpg" alt="Perfil-Usuario">
-                <h4>Marcos Henrique</h4>
-                <h4>@MHenrique58502</h4>
-                <img class="perfil_icon" src="/img/more.png" alt="Perfil-Usuario">
+          </div>
+        </div>
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Elixir Digest
+              </div>
+              <div class="tweet__author-slug">
+                @elixirdigest
+              </div>
+              <div class="tweet__publish-time">
+                10d
+              </div>
             </div>
-
+            <div class="tweet__content">
+              Yet Another Guide To Build a JSON API with Phoenix 1.5 shared in
+              the latest Elixir Digest
+              <a href="https://elixirdigest.net/digests/276"
+                >https://elixirdigest.net/digests/276</a
+              >
+              @_tamas_soos #myelixirstatus #elixirlang #phoenixframework
+            </div>
+          </div>
         </div>
 
-
-        <div class="layout__main">
-            <h3>Home</h3>
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Chris Martin
+              </div>
+              <div class="tweet__author-slug">
+                @chris_martin
+              </div>
+              <div class="tweet__publish-time">
+                15h
+              </div>
+            </div>
+            <div class="tweet__content">
+              One of my favorite things about the "ergonomics" of haskell is
+              being able to leave underscores in code that isn't finished yet,
+              and the type checker still works and provides useful information
+              about the incomplete code. ("holes" --
+              <a href="https://typeclasses.com/typed-holes"
+                >https://typeclasses.com/typed-holes</a
+              >)
+              <img class="tweet__image" src="./images/post-image-1.jpeg" />
+            </div>
+          </div>
         </div>
 
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Becki (& Chris)
+              </div>
+              <div class="tweet__author-slug">
+                @beckiandchris
+              </div>
+              <div class="tweet__publish-time">
+                38m
+              </div>
+            </div>
+            <div class="tweet__content">
+              Thank you
+            </div>
+          </div>
+        </div>
 
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Becki (& Chris)
+              </div>
+              <div class="tweet__author-slug">
+                @beckiandchris
+              </div>
+              <div class="tweet__publish-time">
+                38m
+              </div>
+            </div>
+            <div class="tweet__content">
+              Thank you
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet">
+          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Becki (& Chris)
+              </div>
+              <div class="tweet__author-slug">
+                @beckiandchris
+              </div>
+              <div class="tweet__publish-time">
+                38m
+              </div>
+            </div>
+            <div class="tweet__content">
+              Thank you
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layout__right-sidebar-container">
+        <input type="text" placeholder="Search Twitter">
         <div class="layout__right-sidebar">
-            <input type="text" placeholder="Search Twitter">
-
-            <div class="container">
-                    <h3>What's happening</h1>
-                    <br>
-                    <p>Trending in Brazil</p>
-                    <h4>Marília</h4>
-                    <p>88.4K Tweets</p>
-                    <br>
-                    <p>Music ° Trending</p>
-                    <h4>Marilinha</h4>
-                    <p>1,615 tweets</p>
-                    <br>
-                    <p>Sports ° Trending</p>
-                    <h4>Dogão</h4>
-                    <p>1,041 tweets</p>
-                    <br>
-                    <p>Korean music ° Trending</p>
-                    <h4>BTS IS COMING</h4>
-                    <p>Trending with <span>BTS IS BACK, BTS NEW SONG</span></p>
-                    <br>
-                    <p>Sports ° Trending</p>
-                    <h4>#MARxFLA</h4>
-                    <p>Trending with <span>Jorge Jesus</span></p>
-                    <br>
-                    <span>Show More</span>
+          <div class="trends-for-you">
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__heading">
+                What's happening
+              </div>
             </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                NBA * 39 minutes ago
+              </div>
+              <div class="trends-for-you__trend-name">
+                Lakers at Grizzlies
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                News * Trending
+              </div>
+              <div class="trends-for-you__trend-name">
+                ARMAÇÃO DA CNN
+              </div>
+              <div class="trends-for-you__meta-information">
+                5,916 Tweets
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Beijing Sinobo Guoan FC * Trending
+              </div>
+              <div class="trends-for-you__trend-name">
+                Renato Augusto
+              </div>
+              <div class="trends-for-you__meta-information">
+                4,183 Tweets
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+                <div class="trends-for-you__meta-information">
+                  Sports * Trending
+                </div>
+                <div class="trends-for-you__trend-name">
+                  #SCCPxARG
+                </div>
+                <div class="trends-for-you__meta-information">
+                  5,585 Tweets
+                </div>
+            </div>
+            <div class="trends-for-you__block">
+                <div class="trends-for-you__meta-information">
+                  Music * Trending
+                </div>
+                <div class="trends-for-you__trend-name">
+                  LOUIS TOMLINSON
+                </div>
+                <div class="trends-for-you__meta-information">
+                  18.8K Tweets
+                </div>
+                <span>Show More</span>
+            </div>
+          </div>
+          <div class="who-to-follow">
+            <div class="who-to-follow__block">
+              <div class="who-to-follow__heading">
+                Who to follow
+              </div>
+            </div>
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/profile-image-1.jpg"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    Flamengo
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @Flamengo_en
+                  </div>
+                </div>
+                <div class="who-to-follow__button">
+                  Follow
+                </div>
+              </div>
+            </div>
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/profile-image-2.png"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    LUÍSA SONZA
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @Luisasonza
+                  </div>
+                </div>
+                <div class="who-to-follow__button">
+                  Follow
+                </div>
+              </div>
+            </div>
+
+            <div class="who-to-follow__block">
+              <img
+                class="who-to-follow__author-logo"
+                src="./images/profile-image-3.jpg"
+              />
+              <div class="who-to-follow__content">
+                <div>
+                  <div class="who-to-follow__author-name">
+                    Flamengo
+                  </div>
+                  <div class="who-to-follow__author-slug">
+                    @Flamengo
+                  </div>
+                </div>
+                <div class="who-to-follow__button">
+                  Follow
+                </div>
+              </div>
+            </div>
+            <span>Show More</span>
+          </div>
         </div>
-
+      </div>
     </div>
-
-
-    <!-- <header>
-        <nav>
-            <div class="icon-Twitter">
-                <img src="/img/twitter-logo.png" width="30" height="30" alt="twitter">
-            </div>
-            <div class="home">
-                <h1>Home</h1>
-            </div>
-              <form>
-                <input type="text" placeholder="Search Twitter">
-              </form>
-            </div>
-        </nav>
-    </header> -->
-
-    
-</body>
+  </body>
 </html>
