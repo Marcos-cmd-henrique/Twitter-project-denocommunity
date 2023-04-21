@@ -2,13 +2,7 @@ html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
-/* SIDEBAR LADO ESQUERDDO */
-.brand {
-  height: 28px;
-  filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%);
-  padding: 10px;
-}
-
+/* Layout Principal - container principal de tod estrutura */
 .layout {
   display: grid;
   grid-template-columns: 275px auto 350px;
@@ -16,15 +10,30 @@ html {
   max-width: 1200px;
 }
 
+/* SIDEBAR LADO ESQUERDDO */
+
+/* icone do twitter */
+.brand {
+  height: 28px;
+  filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%);
+  padding: 10px;
+}
+
+
+/* Barra lateral direita  */
 .layout__right-sidebar {
   position: fixed;
   width: 350px;
 }
 
+
+/* Sidebar do menu da barra esquerda latera */
 .sidebar-menu {
   position: fixed;
 }
 
+
+/* Botão azul de twitte  */
 .button-tweet{
   padding: 15px 25px;
   font-size: 24px;
@@ -38,10 +47,14 @@ html {
   margin: 20px auto 20px auto;
 }
 
+
+/* Imagem de perfil da barra lateral esquerda */
 .profile img{
   border-radius: 50%;
   width: 2.5rem;
 }
+
+/* Estilo de todos os ícones do sidebar esquerdo */
 
 .sidebar-menu__item {
   font-size: 19px;
@@ -52,61 +65,79 @@ html {
   padding: 10px;
 }
 
+/* Hover dos icones do sidebar esquerdo */
 .sidebar-menu__item:hover {
-  background: rgba(29, 161, 242, 0.1);
-  color: #1da0f2;
+  background: rgba(97, 103, 107, 0.1);
+ /*  color: #1da0f2; */
   border-radius: 20px;
   cursor: pointer;
 }
 
-.sidebar-menu__item--active {
+
+/* Active para manter azul item principal */
+/* .sidebar-menu__item--active {
   color: #1da0f2;
-}
+} */
 
 .sidebar-menu__item-icon {
   height: 26px;
   margin-right: 20px;
 }
 
-.sidebar-menu__item--active .sidebar-menu__item-icon {
+/* deixava o icone da home azul */
+/* .sidebar-menu__item--active .sidebar-menu__item-icon {
   filter: invert(67%) sepia(60%) saturate(4956%) hue-rotate(176deg) brightness(95%) contrast(99%);
-}
+} */
 
+/* ---------------------------------------------------------- */
+
+/* LADO DIREITO DO SIDEBAR */
+
+/* tendências para você -  background do lado direito*/
 .trends-for-you {
   border-radius: 15px;
   background: #f5f8fa;
   margin-bottom: 15px;
 }
 
+/* padding do bloco */
 .trends-for-you__block {
   border-bottom: 1px solid #e6ecf0;
   padding: 10px 15px;
 }
 
+/* Show More */
 .trends-for-you__block span {
   color: rgb(29, 155, 240);
 }
 
+
+/* A quem seguir -  Show More dos serguidores que podemos seguir */
 .who-to-follow span {
   color: rgb(29, 155, 240);
 }
 
 .trends-for-you__block:last-child {
-  border-bottom: none;
+  border-bottom: none; /* linha de contorno */
 }
 
+/* Nome principal do bloco*/
 .trends-for-you__heading {
   font-size: 19px;
   font-weight: bold;
   color: #14171a;
 }
 
+
+/* Informações da quantidade de seguidores 18.8k Tweets */
 .trends-for-you__meta-information {
   font-size: 13px;
   font-weight: 300;
   color: #657786;
 }
 
+
+/* Nome do titulo principal da tendencia - Renato Augusto*/
 .trends-for-you__trend-name {
   font-size: 15px;
   color: #14171a;
@@ -115,11 +146,21 @@ html {
   margin-top: 2px;
 }
 
+
+/* TWEET da parte da MAIN */
+
 .tweet {
   display: flex;
   border-bottom: 1px solid #e6ecf0;
   margin-bottom: 2px;
   padding: 10px 15px;
+  
+}
+
+/* toda a main do TWEET */
+.tweet__main{
+  width: 100%;
+
 }
 
 .tweet:hover {
@@ -154,14 +195,51 @@ html {
   margin-right: 5px;
 }
 
+/*  What's happening? */
 .tweet__author-slug {
   color: #5b7083;
   font-size: 15px;
+  font-size: 18px;
 }
 
-.tweet__publish-time {
+
+/* .tweet__publish-time {
   margin-left: 5px;
   color: #657786;
+} */
+
+/* Conteúdo dos ícones do MENU PRINCIPAL*/
+.tweet__content{
+  /* color: #1b94e0; */
+  /* Para o SVG esse formato de filtro que funciona para pegar a cor */
+  /* filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%); */
+  width: 1.5rem;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.tweet__content img{
+  filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%);
+}
+
+.button-tweet-content{
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around ;
+}
+
+.button-tweet-content button{
+  padding: 10px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  background:rgb(29, 155, 240);
+  color: white;
+  width: 5rem;
+  border: none;
+  border-radius: 40px;
 }
 
 .tweet__image {
