@@ -236,3 +236,33 @@ html {
   background: rgba(29, 161, 242, 0.1);
   cursor: pointer;
 }
+
+.search_box{
+  background-color: rgb(239, 241, 243);
+  height: 38px;
+  border-radius: 40px;
+  padding: auto;
+  color: rgba(0,0,0,1.00);
+}
+
+.search_btn{
+  color: rgb(83, 100, 113);  float: left;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 40px;
+  width: 240px;
+}
