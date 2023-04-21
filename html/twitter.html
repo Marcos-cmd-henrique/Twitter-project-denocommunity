@@ -9,6 +9,8 @@
     <title>Home/Twitter</title>
 </head>
 <body>
+
+  <!-- LADO ESQUERDO DO SIDEBAR -->
     <div class="layout">
       <div class="layout__left-sidebar">
         <img src="../svg/twitter.svg" class="brand" />
@@ -41,7 +43,7 @@
           </div>
 
           <div class="sidebar-menu__item">
-            <img src="../svg/messages.svg" class="sidebar-menu__item-icon" />
+            <img src="../svg/twitter-blue.svg" class="sidebar-menu__item-icon" />
             Twitter Blue
           </div>
 
@@ -59,12 +61,13 @@
 
           <div class="profile">
             <img class="imagem_profile" src="../img/profile.jpg" alt="Perfil-Usuario">
-            <p>Marcos Henrique</p>
-            <p>@MHenrique58502</p>
+            <p>Marcos Henrique</p> <p>@MHenrique58502</p>
             <img class="perfil_icon" src="../img/more.png" alt="More">
         </div>
         </div>
       </div>
+
+      <!-- PARTE PRINCIPAL - DA HOME -->
 
       <div class="layout__main">
         <div class="tweet">
@@ -73,122 +76,57 @@
               <div class="tweet__author-name">
                 Home
               </div>
+
+              <div class="follow">
+                <p>For you</p>
+                <p>Following</p>
+              </div>
               
             </div>
           </div>
         </div>
-        <div class="tweet">
-          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
-          <div class="tweet__main">
-            <div class="tweet__header">
-              <div class="tweet__author-name">
-                Elixir Digest
-              </div>
-              <div class="tweet__author-slug">
-                @elixirdigest
-              </div>
-              <div class="tweet__publish-time">
-                10d
-              </div>
-            </div>
-            <div class="tweet__content">
-              Yet Another Guide To Build a JSON API with Phoenix 1.5 shared in
-              the latest Elixir Digest
-              <a href="https://elixirdigest.net/digests/276"
-                >https://elixirdigest.net/digests/276</a
-              >
-              @_tamas_soos #myelixirstatus #elixirlang #phoenixframework
-            </div>
-          </div>
-        </div>
 
         <div class="tweet">
-          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
+          <img class="tweet__author-logo" src="../img/profile.jpg" />
           <div class="tweet__main">
             <div class="tweet__header">
-              <div class="tweet__author-name">
-                Chris Martin
-              </div>
+              
+<!--               <div class="tweet__author-name">
+                What's happening?
+              </div> -->
               <div class="tweet__author-slug">
-                @chris_martin
+                What's happening?
               </div>
-              <div class="tweet__publish-time">
-                15h
-              </div>
+
             </div>
             <div class="tweet__content">
-              One of my favorite things about the "ergonomics" of haskell is
-              being able to leave underscores in code that isn't finished yet,
-              and the type checker still works and provides useful information
-              about the incomplete code. ("holes" --
-              <a href="https://typeclasses.com/typed-holes"
-                >https://typeclasses.com/typed-holes</a
-              >)
-              <img class="tweet__image" src="./images/post-image-1.jpeg" />
+             <img src="../svg/home-icon.svg" alt="media">
+             <img src="../svg/gif-icon.svg" alt="gif">
+             <img src="../svg/poll.svg" alt="poll">
+             <img src="../svg/emoji.svg" alt="emoji">
+             <img src="../svg/schedule.svg" alt="schedule">
+             <img src="../svg/localizacao.svg" alt="localizacao">
+             <button>Tweet</button>
             </div>
           </div>
-        </div>
+        </div> 
 
         <div class="tweet">
-          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
           <div class="tweet__main">
             <div class="tweet__header">
               <div class="tweet__author-name">
-                Becki (& Chris)
-              </div>
-              <div class="tweet__author-slug">
-                @beckiandchris
-              </div>
-              <div class="tweet__publish-time">
-                38m
+                Before you scroll...
               </div>
             </div>
             <div class="tweet__content">
-              Thank you
-            </div>
-          </div>
-        </div>
-
-        <div class="tweet">
-          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
-          <div class="tweet__main">
-            <div class="tweet__header">
-              <div class="tweet__author-name">
-                Becki (& Chris)
-              </div>
-              <div class="tweet__author-slug">
-                @beckiandchris
-              </div>
-              <div class="tweet__publish-time">
-                38m
-              </div>
-            </div>
-            <div class="tweet__content">
-              Thank you
-            </div>
-          </div>
-        </div>
-
-        <div class="tweet">
-          <img class="tweet__author-logo" src="./images/profile-image-1.jpg" />
-          <div class="tweet__main">
-            <div class="tweet__header">
-              <div class="tweet__author-name">
-                Becki (& Chris)
-              </div>
-              <div class="tweet__author-slug">
-                @beckiandchris
-              </div>
-              <div class="tweet__publish-time">
-                38m
-              </div>
-            </div>
-            <div class="tweet__content">
-              Thank you
+             We're updating our corporate name in our Terms of Service and Privacy Policy.
+             Now's a greate chance to review them. 
             </div>
           </div>
         </div>
       </div>
+
+      <!-- LADO DIREITO SIDEBAR -->
 
       <div class="layout__right-sidebar-container">
 
@@ -270,7 +208,7 @@
             <div class="who-to-follow__block">
               <img
                 class="who-to-follow__author-logo"
-                src="./images/profile-image-1.jpg"
+                src="../img/FLAMENGO.jpg"
               />
               <div class="who-to-follow__content">
                 <div>
@@ -289,7 +227,7 @@
             <div class="who-to-follow__block">
               <img
                 class="who-to-follow__author-logo"
-                src="./images/profile-image-2.png"
+                src="../img/LUISASONSA.jpg"
               />
               <div class="who-to-follow__content">
                 <div>
@@ -309,7 +247,7 @@
             <div class="who-to-follow__block">
               <img
                 class="who-to-follow__author-logo"
-                src="./images/profile-image-3.jpg"
+                src="../img/FLAMENGO3.jpg"
               />
               <div class="who-to-follow__content">
                 <div>
