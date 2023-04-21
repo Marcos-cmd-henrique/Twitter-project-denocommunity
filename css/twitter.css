@@ -202,42 +202,37 @@ html {
   font-size: 18px;
 }
 
-
-/* .tweet__publish-time {
-  margin-left: 5px;
-  color: #657786;
-} */
-
 /* Conteúdo dos ícones do MENU PRINCIPAL*/
 .tweet__content{
   /* color: #1b94e0; */
-  /* Para o SVG esse formato de filtro que funciona para pegar a cor */
-  /* filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%); */
-  width: 1.5rem;
-  padding: 30px;
+  width: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
   
 }
 
 .tweet__content img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
   filter: invert(46%) sepia(99%) saturate(1449%) hue-rotate(176deg) brightness(100%) contrast(91%);
 }
 
-.button-tweet-content{
+.button-tweet-content {
   margin-left: auto;
   display: flex;
-  justify-content: space-around ;
 }
 
 .button-tweet-content button{
-  padding: 10px 10px;
+  width: 70px;
+  padding: 10px;
   font-size: 18px;
   cursor: pointer;
   text-align: center;
   background:rgb(29, 155, 240);
   color: white;
-  width: 5rem;
   border: none;
   border-radius: 40px;
 }
