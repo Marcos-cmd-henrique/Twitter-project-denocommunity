@@ -90,7 +90,16 @@ html {
   color: #0F141A;
   display: flex;
   align-items: center;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.sidebar-menu__item--active{
   font-weight: 700;
+  font-size: 19px;
+  color: #0F141A;
+  display: flex;
+  align-items: center;
   padding: 10px;
 }
 
@@ -274,6 +283,18 @@ html {
 .button-tweet-content {
   margin-left: auto;
   display: flex;
+}
+
+.button-go-content button{
+  width: 70px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 40px;
+  background: #0F141A;
+  color: white;
 }
 
 .button-tweet-content button{
