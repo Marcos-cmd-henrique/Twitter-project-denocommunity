@@ -188,12 +188,34 @@ html {
   display: flex;
 }
 
+
+/* Nome HOME */
 .tweet__author-name {
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 700;
   color: #14171a;
   margin-right: 5px;
+  padding-bottom: 10px;
 }
+
+.tweet__content_text span{
+  color: #1b94e0;
+}
+
+
+/* For you e Following */
+.follow{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.follow:hover {
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
 
 /*  What's happening? */
 .tweet__author-slug {
@@ -242,6 +264,8 @@ html {
   border-radius: 15px;
   margin-top: 10px;
 }
+
+
 
 .who-to-follow {
   background: #f5f8fa;
